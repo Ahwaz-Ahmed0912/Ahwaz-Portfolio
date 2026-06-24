@@ -1,0 +1,120 @@
+Keep the entire Skills section exactly as it is right now in terms of:
+
+* Design
+* Layout
+* Styling
+* Colors
+* Animations
+* Responsiveness
+* Categories
+* Skill names
+* Structure
+
+Do **not** modify, redesign, remove, rename, reorder, or restyle anything.
+
+### Required Change
+
+Convert every skill badge/chip/button into a clickable link.
+
+When a user clicks a skill, it should open the official documentation for that technology in a new browser tab.
+
+The visual appearance must remain exactly the same as the current UI.
+
+### Implementation Requirements
+
+* Wrap each skill item with an anchor (`<a>`) or navigation link.
+* Use `target="_blank"` and `rel="noopener noreferrer"`.
+* Preserve all existing hover effects and styling.
+* Do not change spacing, sizing, typography, icons, or component structure.
+* Only add documentation URLs behind the existing skill buttons.
+
+### Documentation Mapping
+
+#### Languages & Core
+
+JavaScript -> https://developer.mozilla.org/en-US/docs/Web/JavaScript
+TypeScript -> https://www.typescriptlang.org/docs/
+Python -> https://docs.python.org/3/
+C -> https://en.cppreference.com/w/c
+C++ -> https://en.cppreference.com/w/cpp
+PHP -> https://www.php.net/docs.phpDart -> https://dart.dev/guides
+Kotlin -> https://kotlinlang.org/docs/home.html
+Bash -> https://www.gnu.org/software/bash/manual/
+PowerShell -> https://learn.microsoft.com/powershell/
+Markdown -> https://www.markdownguide.org/
+
+
+#### Frontend & UI
+
+HTML5 -> https://developer.mozilla.org/en-US/docs/Web/HTML
+React -> https://react.dev/
+Next.js -> https://nextjs.org/docs
+Angular -> https://angular.dev/
+Bootstrap -> https://getbootstrap.com/docs/
+Vite -> https://vitejs.dev/guide/
+Flutter -> https://docs.flutter.dev/
+React Native -> https://reactnative.dev/docs/getting-started
+Figma -> https://help.figma.com/
+Canva -> https://www.canva.com/help/
+
+
+#### Backend
+
+Node.js -> https://nodejs.org/docs/latest/api/
+Express.js -> https://expressjs.com/
+Django -> https://docs.djangoproject.com/
+Flask -> https://flask.palletsprojects.com/
+Laravel -> https://laravel.com/docs
+REST APIs -> https://restfulapi.net/
+WordPress -> https://developer.wordpress.org/
+NPM -> https://docs.npmjs.com/
+
+
+#### Databases
+
+MySQL -> https://dev.mysql.com/doc/
+PostgreSQL -> https://www.postgresql.org/docs/
+MSSQL -> https://learn.microsoft.com/sql/
+MongoDB -> https://www.mongodb.com/docs/
+SQLite -> https://sqlite.org/docs.html
+Supabase -> https://supabase.com/docs
+Firebase -> https://firebase.google.com/docs
+Oracle -> https://docs.oracle.com/en/database/
+
+
+#### Cloud, DevOps & Tools
+
+Linux -> https://tldp.org/
+Docker -> https://docs.docker.com/
+Git -> https://git-scm.com/doc
+GitHub -> https://docs.github.com/
+GitLab -> https://docs.gitlab.com/
+AWS -> https://docs.aws.amazon.com/
+GCP -> https://cloud.google.com/docs
+Azure -> https://learn.microsoft.com/azure/
+Vercel -> https://vercel.com/docs
+Nginx -> https://nginx.org/en/docs/
+Apache -> https://httpd.apache.org/docs/
+Postman -> https://learning.postman.com/docs/
+Power BI -> https://learn.microsoft.com/power-bi/
+Notion -> https://www.notion.so/help
+Trello -> https://support.atlassian.com/trello/
+
+
+#### Data, AI & Automation
+
+PyTorch -> https://pytorch.org/docs/stable/
+TensorFlow -> https://www.tensorflow.org/learn
+Scikit-Learn -> https://scikit-learn.org/stable/documentation.html
+Pandas -> https://pandas.pydata.org/docs/
+NumPy -> https://numpy.org/doc/
+Make.com -> https://www.make.com/en/help
+n8n -> https://docs.n8n.io/
+AI Agents -> https://platform.openai.com/docs
+Anaconda -> https://docs.anaconda.com/
+Selenium -> https://www.selenium.dev/documentation/
+
+
+### Final Output Requirement
+
+Update only the Skills section so that every skill badge becomes a clickable documentation link while keeping the UI visually identical to the current implementation. No other code, styling, components, layouts, or sections should be modified.

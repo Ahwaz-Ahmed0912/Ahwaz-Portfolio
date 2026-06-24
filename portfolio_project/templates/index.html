@@ -1,0 +1,1460 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ahwaz Ahmad — AI Automation Engineer, Full Stack Developer, and Computer Science Student. Portfolio showcasing projects, skills, and experience.">
+    <meta name="keywords"
+        content="Ahwaz Ahmad, Portfolio, AI Automation, Full Stack Developer, Web Developer, Python, Django, React">
+    <meta name="author" content="Ahwaz Ahmad">
+    <meta property="og:title" content="Ahwaz Ahmad — Portfolio">
+    <meta property="og:description" content="AI Automation Engineer & Full Stack Developer">
+    <meta property="og:type" content="website">
+    <title>Ahwaz Ahmad — AI Automation Engineer & Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="name">Ahwaz Ahmad</div>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Mobile overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-logo">
+                <img src="{% static 'img/logo.png' %}" alt="Ahwaz Logo" class="logo-img">
+                <span>Ahwaz Ahmad</span><span class="dot">.</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero section" id="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting"><span class="wave">👋</span> Hello, I'm</p>
+                    <h1 class="hero-name-glow">AHWAZ AHMAD</h1>
+                    <div class="role futuristic-role">
+                        <span id="typingText"></span><span class="cursor"></span>
+                    </div>
+
+                    <div class="hero-metrics-grid">
+                        <div class="hero-metric-card glass-card">
+                            <div class="metric-value">
+                                <span class="metric-num" data-target="30">30</span><span class="metric-plus">+</span>
+                            </div>
+                            <span class="metric-label">Projects Built</span>
+                        </div>
+                        <div class="hero-metric-card glass-card">
+                            <div class="metric-value">
+                                <span class="metric-num" data-target="100">100</span><span class="metric-plus">+</span>
+                            </div>
+                            <span class="metric-label">Automation Systems</span>
+                        </div>
+                        <div class="hero-metric-card glass-card">
+                            <div class="metric-value">
+                                <span class="metric-num" data-target="100">100</span><span class="metric-plus">+</span>
+                            </div>
+                            <span class="metric-label">AI Integrations</span>
+                        </div>
+                        <div class="hero-metric-card glass-card">
+                            <div class="metric-value">
+                                <span class="metric-num" data-target="4">4</span><span class="metric-plus">+</span>
+                            </div>
+                            <span class="metric-label">Years Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Projects
+                        </a>
+                        <a href="{% static 'cv/Ahwaz_Ahmad_CV.pdf' %}" download class="btn btn-outline">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#research" class="btn btn-outline">
+                            <i class="fas fa-flask"></i> Research Work
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fas fa-envelope"></i> Let's Connect
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Ahwaz-Ahmed0912" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ahwaz-ahmad-52112a261/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahwazahmad87@gmail.com" target="_blank"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ai-core-wrapper">
+                        <!-- Holographic Sphere -->
+                        <div class="holographic-sphere"></div>
+
+                        <!-- Rotating Tech Rings -->
+                        <div class="tech-ring ring-1">
+                            <div class="tech-node"><i class="fa-brands fa-react"></i></div>
+                            <div class="tech-node"><i class="fa-brands fa-angular"></i></div>
+                            <div class="tech-node"><span class="orbit-icon-text">Nx</span></div>
+                        </div>
+                        <div class="tech-ring ring-2">
+                            <div class="tech-node"><i class="fa-brands fa-python"></i></div>
+                            <div class="tech-node"><i class="fa-brands fa-node-js"></i></div>
+                            <div class="tech-node"><span class="orbit-icon-text">AI</span></div>
+                        </div>
+                        <div class="tech-ring ring-3">
+                            <div class="tech-node"><span class="orbit-icon-text">ML</span></div>
+                            <div class="tech-node"><i class="fas fa-database"></i></div>
+                            <div class="tech-node"><i class="fas fa-cloud"></i></div>
+                        </div>
+
+                        <!-- Center Core Text -->
+                        <div class="ai-core-center">
+                            <div class="core-pulse"></div>
+                            <span class="core-name">AHWAZ</span>
+                            <span class="core-subtitle">AI CORE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="about">
+        <div class="about-particles" id="aboutParticles"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About Me</h2>
+                <p>Personal Command Center</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- ===== ABOUT DASHBOARD LAYOUT ===== -->
+            <div class="about-content reveal">
+                <!-- LEFT SIDE -->
+                <div class="about-left">
+                    <div class="about-photo-frame">
+                        <div class="about-photo-glow"></div>
+                        <div class="about-image-wrapper">
+                            <img src="{% static 'img/pic1.png' %}" alt="Ahwaz Ahmad" class="about-img">
+                            <div class="about-holo-corners">
+                                <span class="holo-corner holo-tl"></span>
+                                <span class="holo-corner holo-tr"></span>
+                                <span class="holo-corner holo-bl"></span>
+                                <span class="holo-corner holo-br"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-status-indicator">
+                        <span class="status-dot"></span>
+                        Available for Projects
+                    </div>
+
+                    <div class="about-badge">3+ Years Building</div>
+
+                    <div class="about-education-card glass-card">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <div class="edu-degree">Bachelor of Computer Science</div>
+                        <div class="edu-uni">University of Management and Technology (UMT)</div>
+                        <div class="edu-focus">
+                            <span>AI Systems</span>
+                            <span>Software Engineering</span>
+                            <span>Networking</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="about-right">
+                    <!-- Profile Header -->
+                    <div class="about-profile-header">
+                        <h3 class="about-name-glow">AHWAZ</h3>
+                        <div class="about-roles">
+                            <span>Computer Science Student</span>
+                            <span class="role-divider">•</span>
+                            <span>Full Stack AI Engineer</span>
+                            <span class="role-divider">•</span>
+                            <span>Automation Architect</span>
+                        </div>
+                    </div>
+
+                    <!-- Introduction -->
+                    <div class="about-intro">
+                        <p>I'm a Computer Science student at UMT, deeply passionate about AI automation, full-stack
+                            development, and system architecture. I thrive on building solutions that automate
+                            processes, integrate cutting-edge AI tools, and deliver real impact.</p>
+                        <p>With hands-on experience building automation systems, full-stack applications, and API-based
+                            platforms, I bring a problem-solving mindset and innovative approach to every project.</p>
+                    </div>
+
+                    <!-- Tech Stack Badges -->
+                    <div class="about-tech-badges">
+                        <div class="badge-category">
+                            <span class="badge-cat-label">Languages & Core</span>
+                            <div class="badge-items">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><i
+                                        class="fa-brands fa-js" style="color:#f7df1e;"></i> JavaScript</a>
+                                <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#3178c6;">TS</span> TypeScript</a>
+                                <a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-python"
+                                        style="color:#3776ab;"></i> Python</a>
+                                <a href="https://en.cppreference.com/w/cpp" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#00599c;">C</span> C / C++</a>
+                                <a href="https://www.php.net/docs.php" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-php"
+                                        style="color:#777bb4;"></i> PHP</a>
+                                <a href="https://dart.dev/guides" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#0175c2;">Drt</span> Dart</a>
+                                <a href="https://kotlinlang.org/docs/home.html" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><span
+                                        class="badge-icon-text" style="color:#7f52ff;">Kt</span> Kotlin</a>
+                                <a href="https://www.gnu.org/software/bash/manual/" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><span
+                                        class="badge-icon-text" style="color:#4eaa25;">$</span> Bash / PS</a>
+                                <a href="https://www.markdownguide.org/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#9ca3af;">📝</span> Markdown</a>
+                            </div>
+                        </div>
+                        <div class="badge-category">
+                            <span class="badge-cat-label">Frontend & UI</span>
+                            <div class="badge-items">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><i
+                                        class="fa-brands fa-html5" style="color:#e34f26;"></i> HTML5</a>
+                                <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-react"
+                                        style="color:#61dafb;"></i> React / Next</a>
+                                <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-angular"
+                                        style="color:#dd0031;"></i> Angular</a>
+                                <a href="https://getbootstrap.com/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-bootstrap"
+                                        style="color:#7952b3;"></i> Bootstrap</a>
+                                <a href="https://vitejs.dev/guide/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#646cff;">⚡</span> Vite</a>
+                                <a href="https://docs.flutter.dev/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#02569b;">Flu</span> Flutter</a>
+                                <a href="https://reactnative.dev/docs/getting-started" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><span
+                                        class="badge-icon-text" style="color:#61dafb;">RN</span> React Native</a>
+                                <a href="https://help.figma.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-figma"
+                                        style="color:#f24e1e;"></i> Figma</a>
+                                <a href="https://www.canva.com/help/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#00c4cc;">🎨</span> Canva</a>
+                            </div>
+                        </div>
+                        <div class="badge-category">
+                            <span class="badge-cat-label">Backend</span>
+                            <div class="badge-items">
+                                <a href="https://nodejs.org/docs/latest/api/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-node-js"
+                                        style="color:#339933;"></i> Node.js</a>
+                                <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#333;">Ex</span> Express.js</a>
+                                <a href="https://docs.djangoproject.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#092e20;">Dj</span> Django</a>
+                                <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#000;">Flk</span> Flask</a>
+                                <a href="https://laravel.com/docs" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-laravel"
+                                        style="color:#ff2d20;"></i> Laravel</a>
+                                <a href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fas fa-plug"
+                                        style="color:#38bdf8;"></i> REST APIs</a>
+                                <a href="https://developer.wordpress.org/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-wordpress"
+                                        style="color:#21759b;"></i> Wordpress</a>
+                                <a href="https://docs.npmjs.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-npm"
+                                        style="color:#cb3837;"></i> NPM</a>
+                            </div>
+                        </div>
+                        <div class="badge-category">
+                            <span class="badge-cat-label">Databases</span>
+                            <div class="badge-items">
+                                <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#4479a1;">SQL</span> MySQL</a>
+                                <a href="https://www.postgresql.org/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#336791;">PG</span> PostgreSQL</a>
+                                <a href="https://learn.microsoft.com/sql/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fas fa-database"
+                                        style="color:#cc2927;"></i> MSSQL</a>
+                                <a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#47a248;">M</span> MongoDB</a>
+                                <a href="https://sqlite.org/docs.html" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#003b57;">Lite</span> SQLite</a>
+                                <a href="https://supabase.com/docs" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#3ecf8e;">Sup</span> Supabase</a>
+                                <a href="https://firebase.google.com/docs" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#ffca28;">🔥</span> Firebase</a>
+                                <a href="https://docs.oracle.com/en/database/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#f80000;">Or</span> Oracle</a>
+                            </div>
+                        </div>
+                        <div class="badge-category">
+                            <span class="badge-cat-label">Cloud, DevOps & Tools</span>
+                            <div class="badge-items">
+                                <a href="https://tldp.org/" target="_blank" rel="noopener noreferrer" class="tech-badge"
+                                    style="text-decoration:none;"><i class="fa-brands fa-linux"
+                                        style="color:#fcc624;"></i> Linux</a>
+                                <a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-docker"
+                                        style="color:#2496ed;"></i> Docker</a>
+                                <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-git-alt"
+                                        style="color:#f05032;"></i> Git/GitHub/GitLab</a>
+                                <a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><i class="fa-brands fa-aws"
+                                        style="color:#ff9900;"></i> AWS/GCP/Azure</a>
+                                <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#000;">▲</span> Vercel</a>
+                                <a href="https://nginx.org/en/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#009639;">Nx</span> Nginx/Apache</a>
+                                <a href="https://learning.postman.com/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#ff6c37;">📮</span> Postman</a>
+                                <a href="https://learn.microsoft.com/power-bi/" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><span
+                                        class="badge-icon-text" style="color:#f2c811;">📊</span> Power BI</a>
+                                <a href="https://www.notion.so/help" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#9ca3af;">📋</span> Notion/Trello</a>
+                            </div>
+                        </div>
+                        <div class="badge-category">
+                            <span class="badge-cat-label">Data, AI & Automation</span>
+                            <div class="badge-items">
+                                <a href="https://pytorch.org/docs/stable/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#ee4c2c;">🔥</span> PyTorch</a>
+                                <a href="https://www.tensorflow.org/learn" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#ff6f00;">TF</span> TensorFlow</a>
+                                <a href="https://scikit-learn.org/stable/documentation.html" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><span
+                                        class="badge-icon-text" style="color:#f7931e;">SK</span> Scikit-Learn</a>
+                                <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#150458;">🐼</span> Pandas/Numpy</a>
+                                <a href="https://www.make.com/en/help" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#6d3aef;">Mk</span> Make.com</a>
+                                <a href="https://docs.n8n.io/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#ea4b71;">n8n</span> n8n</a>
+                                <a href="https://platform.openai.com/docs" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#38bdf8;">🤖</span> AI Agents</a>
+                                <a href="https://docs.anaconda.com/" target="_blank" rel="noopener noreferrer"
+                                    class="tech-badge" style="text-decoration:none;"><span class="badge-icon-text"
+                                        style="color:#44a833;">🐍</span> Anaconda</a>
+                                <a href="https://www.selenium.dev/documentation/" target="_blank"
+                                    rel="noopener noreferrer" class="tech-badge" style="text-decoration:none;"><span
+                                        class="badge-icon-text" style="color:#43b02a;">Se</span> Selenium</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panels Row: Currently Exploring + What I Build -->
+                    <div class="about-panels-row">
+                        <div class="about-panel glass-card">
+                            <h4><i class="fas fa-compass"></i> Currently Exploring</h4>
+                            <ul class="about-panel-list">
+                                <li><i class="fas fa-chevron-right"></i> AI Agents & Multi-Agent Systems</li>
+                                <li><i class="fas fa-chevron-right"></i> Neural Holographic AR Assistant (FYP)</li>
+                                <li><i class="fas fa-chevron-right"></i> Automation Systems</li>
+                                <li><i class="fas fa-chevron-right"></i> Linux Infrastructure</li>
+                                <li><i class="fas fa-chevron-right"></i> Full Stack Architectures</li>
+                                <li><i class="fas fa-chevron-right"></i> Advanced Networking</li>
+                                <li><i class="fas fa-chevron-right"></i> AI-Powered Applications</li>
+                            </ul>
+                        </div>
+                        <div class="about-panel glass-card">
+                            <h4><i class="fas fa-rocket"></i> What I Build</h4>
+                            <ul class="about-panel-list check-list">
+                                <li><i class="fas fa-check"></i> Full Stack Applications</li>
+                                <li><i class="fas fa-check"></i> AI-Powered Systems</li>
+                                <li><i class="fas fa-check"></i> Workflow Automations</li>
+                                <li><i class="fas fa-check"></i> REST API Integrations</li>
+                                <li><i class="fas fa-check"></i> Database Architectures</li>
+                                <li><i class="fas fa-check"></i> Linux-Based Solutions</li>
+                                <li><i class="fas fa-check"></i> Enterprise Networking Projects</li>
+                                <li><i class="fas fa-check"></i> Intelligent Agent Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Achievement Highlights -->
+                    <div class="about-highlights">
+                        <h4><i class="fas fa-trophy" style="color: var(--accent);"></i> Highlights</h4>
+                        <div class="highlights-grid">
+                            <div class="highlight-item reveal">
+                                <span class="highlight-icon">🚀</span>
+                                <span>Built Full Stack Management Systems</span>
+                            </div>
+                            <div class="highlight-item reveal">
+                                <span class="highlight-icon">🤖</span>
+                                <span>Developed AI Automation Workflows</span>
+                            </div>
+                            <div class="highlight-item reveal">
+                                <span class="highlight-icon">🌐</span>
+                                <span>Designed Enterprise Network Topologies</span>
+                            </div>
+                            <div class="highlight-item reveal">
+                                <span class="highlight-icon">⚙️</span>
+                                <span>Integrated Multiple APIs & AI Services</span>
+                            </div>
+                            <div class="highlight-item reveal">
+                                <span class="highlight-icon">🧠</span>
+                                <span>Researching Neural Holographic AR Assistants</span>
+                            </div>
+                            <div class="highlight-item reveal">
+                                <span class="highlight-icon">📊</span>
+                                <span>Built Database-Driven Applications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Stats -->
+                    <div class="about-stats-enhanced">
+                        <div class="stat-card-enhanced glass-card">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-card-enhanced glass-card">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Technologies Used</div>
+                        </div>
+                        <div class="stat-card-enhanced glass-card">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">API Integrations</div>
+                        </div>
+                        <div class="stat-card-enhanced glass-card">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Automation Workflows</div>
+                        </div>
+                        <div class="stat-card-enhanced glass-card">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years Building</div>
+                        </div>
+                    </div>
+
+                    <!-- AI Command Center Terminal -->
+                    <div class="ai-command-center glass-card" id="aboutTerminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <span class="terminal-title">ahwaz@portfolio:~</span>
+                            <span class="terminal-status"><i class="fas fa-wifi"></i> ONLINE</span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div id="bootSequence" class="term-boot"></div>
+                            <div id="termMainContent" class="term-main-content" style="display: none; opacity: 0;">
+                                <pre class="term-ascii-art">
+╔════════════════════════════════════════════╗
+║               AHWAZ AHMAD                  ║
+║      AI Architect | Full Stack Developer   ║
+╚════════════════════════════════════════════╝</pre>
+
+                                <div class="term-section">
+                                    <div class="term-line"><span class="term-check">✓</span> Computer Science Student
+                                    </div>
+                                    <div class="term-line"><span class="term-check">✓</span> AI Architect</div>
+                                    <div class="term-line"><span class="term-check">✓</span> Full Stack Developer</div>
+                                    <div class="term-line"><span class="term-check">✓</span> Automation Engineer</div>
+                                    <div class="term-line"><span class="term-check">✓</span> Researcher</div>
+                                </div>
+
+                                <div class="term-section">
+                                    <div class="term-heading">Current Mission:</div>
+                                    <div class="term-line"><span class="term-arrow">→</span> Building Neural Holographic
+                                        AR Assistant</div>
+                                    <div class="term-line"><span class="term-arrow">→</span> Developing Multi-Agent AI
+                                        Systems</div>
+                                    <div class="term-line"><span class="term-arrow">→</span> Creating Enterprise
+                                        Automation Platforms</div>
+                                    <div class="term-line"><span class="term-arrow">→</span> Exploring AI + AR
+                                        Integration</div>
+                                </div>
+
+                                <div class="term-section">
+                                    <div class="term-heading">AI System Status Dashboard:</div>
+                                    <div class="term-progress-row">
+                                        <span class="term-prog-label">AI Architecture</span>
+                                        <span class="term-prog-bar" data-progress="10">░░░░░░░░░░</span> <span
+                                            class="term-prog-pct">100%</span>
+                                    </div>
+                                    <div class="term-progress-row">
+                                        <span class="term-prog-label">Full Stack Development</span>
+                                        <span class="term-prog-bar" data-progress="10">░░░░░░░░░░</span> <span
+                                            class="term-prog-pct">100%</span>
+                                    </div>
+                                    <div class="term-progress-row">
+                                        <span class="term-prog-label">Automation Engineering</span>
+                                        <span class="term-prog-bar" data-progress="10">░░░░░░░░░░</span> <span
+                                            class="term-prog-pct">100%</span>
+                                    </div>
+                                    <div class="term-progress-row">
+                                        <span class="term-prog-label">Research & Innovation</span>
+                                        <span class="term-prog-bar" data-progress="8">░░░░░░░░░░</span> <span
+                                            class="term-prog-pct">85%</span>
+                                    </div>
+                                    <div class="term-progress-row">
+                                        <span class="term-prog-label">Problem Solving</span>
+                                        <span class="term-prog-bar" data-progress="9">░░░░░░░░░░</span> <span
+                                            class="term-prog-pct">95%</span>
+                                    </div>
+                                    <div class="term-progress-row">
+                                        <span class="term-prog-label">System Design</span>
+                                        <span class="term-prog-bar" data-progress="9">░░░░░░░░░░</span> <span
+                                            class="term-prog-pct">95%</span>
+                                    </div>
+                                </div>
+
+                                <div class="term-section">
+                                    <div class="term-heading">Engineering Metrics:</div>
+                                    <div class="term-stats-grid">
+                                        <div class="term-stat">Projects Built <span
+                                                class="term-dots">..............</span> <span
+                                                class="term-stat-val">20+</span></div>
+                                        <div class="term-stat">Automation Systems <span
+                                                class="term-dots">..........</span> <span
+                                                class="term-stat-val">15+</span></div>
+                                        <div class="term-stat">AI Integrations <span
+                                                class="term-dots">.............</span> <span
+                                                class="term-stat-val">10+</span></div>
+                                        <div class="term-stat">Technologies Learned <span
+                                                class="term-dots">........</span> <span class="term-stat-val">30+</span>
+                                        </div>
+                                        <div class="term-stat">Research Papers Reviewed <span
+                                                class="term-dots">....</span> <span class="term-stat-val">30+</span>
+                                        </div>
+                                        <div class="term-stat">Active FYP Projects <span
+                                                class="term-dots">.........</span> <span class="term-stat-val">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="term-section">
+                                    <div class="term-heading">Availability:</div>
+                                    <div class="term-line"><span class="term-label">STATUS:</span> <span
+                                            class="term-highlight">AVAILABLE FOR INTERNSHIPS</span></div>
+                                    <div class="term-line"><span class="term-label">LOCATION:</span> Lahore, Pakistan
+                                    </div>
+                                    <div class="term-line"><span class="term-label">FOCUS:</span> AI • Automation • Full
+                                        Stack Systems</div>
+                                </div>
+
+                                <div class="term-section">
+                                    <div class="term-heading">Interactive Commands:</div>
+                                    <div class="term-commands">
+                                        <a href="#about" class="term-cmd-link">> about</a>
+                                        <a href="#skills" class="term-cmd-link">> skills</a>
+                                        <a href="#projects" class="term-cmd-link">> projects</a>
+                                        <a href="#research" class="term-cmd-link">> research</a>
+                                        <a href="#contact" class="term-cmd-link">> contact</a>
+                                    </div>
+                                </div>
+
+                                <div class="term-section term-footer">
+                                    <div class="term-line">Designing Intelligent Systems.</div>
+                                    <div class="term-line">Building Scalable Applications.</div>
+                                    <div class="term-line">Exploring the Future of AI.</div>
+                                    <br>
+                                    <div class="term-prompt">ahwaz@portfolio:~$ <span class="term-cursor"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section" id="skills">
+        <div class="skills-bg-particles" id="skillsParticles"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Skills & Technologies</h2>
+                <p>Technologies I work with to bring ideas to life</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Globe Container -->
+            <div class="skills-globe-wrapper reveal">
+                <div class="globe-container" id="globeContainer">
+                    <canvas id="skillsGlobeCanvas"></canvas>
+                    <!-- Center Text -->
+                    <div class="globe-center-text">
+                        <span class="globe-name">AHWAZ AHMAD</span>
+                        <span class="globe-title">AI Architect Full Stack developer</span>
+                    </div>
+                    <!-- Orbiting Icons -->
+                    <div class="orbit-icons" id="orbitIcons">
+                        <!-- Languages -->
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                            rel="noopener noreferrer" class="orbit-icon" style="text-decoration:none;"
+                            data-skill="JavaScript" data-category="Language" data-level="Expert"
+                            data-desc="Core web programming"><i class="fa-brands fa-js"></i>
+                        </a>
+                        <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="TypeScript"
+                            data-category="Language" data-level="Advanced" data-desc="Typed JavaScript"><span
+                                class="orbit-icon-text">TS</span></a>
+                        <a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Python"
+                            data-category="Language" data-level="Advanced" data-desc="Data & AI programming"><i
+                                class="fa-brands fa-python"></i></a>
+                        <a href="https://en.cppreference.com/w/cpp" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="C / C++"
+                            data-category="Language" data-level="Intermediate" data-desc="Systems programming"><span
+                                class="orbit-icon-text">C++</span></a>
+                        <a href="https://www.php.net/docs.php" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="PHP" data-category="Language"
+                            data-level="Intermediate" data-desc="Server scripting"><i class="fa-brands fa-php"></i></a>
+                        <a href="https://kotlinlang.org/docs/home.html" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Kotlin"
+                            data-category="Language" data-level="Intermediate" data-desc="Android development"><span
+                                class="orbit-icon-text">Kt</span></a>
+                        <a href="https://dart.dev/guides" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Dart" data-category="Language"
+                            data-level="Intermediate" data-desc="UI optimization"><span
+                                class="orbit-icon-text">Drt</span></a>
+                        <!-- Frontend -->
+                        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="React" data-category="Frontend"
+                            data-level="Advanced" data-desc="Component-based UI"><i class="fa-brands fa-react"></i></a>
+                        <a href="https://nextjs.org/docs" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Next.js" data-category="Frontend"
+                            data-level="Advanced" data-desc="React framework"><span
+                                class="orbit-icon-text">Nx</span></a>
+                        <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Angular" data-category="Frontend"
+                            data-level="Intermediate" data-desc="Google framework"><i
+                                class="fa-brands fa-angular"></i></a>
+                        <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Vue" data-category="Frontend"
+                            data-level="Intermediate" data-desc="Progressive framework"><i
+                                class="fa-brands fa-vuejs"></i></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                            rel="noopener noreferrer" class="orbit-icon" style="text-decoration:none;"
+                            data-skill="HTML5" data-category="Frontend" data-level="Expert" data-desc="Web structure"><i
+                                class="fa-brands fa-html5"></i></a>
+                        <a href="https://getbootstrap.com/docs/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Bootstrap"
+                            data-category="Frontend" data-level="Advanced" data-desc="CSS framework"><i
+                                class="fa-brands fa-bootstrap"></i></a>
+                        <a href="https://docs.flutter.dev/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Flutter" data-category="Frontend"
+                            data-level="Intermediate" data-desc="Cross-platform UI"><span
+                                class="orbit-icon-text">Flu</span></a>
+                        <a href="https://reactnative.dev/docs/getting-started" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="React Native"
+                            data-category="Frontend" data-level="Intermediate" data-desc="Mobile React app"><span
+                                class="orbit-icon-text">RN</span></a>
+                        <!-- Backend -->
+                        <a href="https://nodejs.org/docs/latest/api/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Node.js"
+                            data-category="Backend" data-level="Advanced" data-desc="JS runtime"><i
+                                class="fa-brands fa-node-js"></i>
+                        </a>
+                        <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Express" data-category="Backend"
+                            data-level="Advanced" data-desc="Web framework for Node"><span
+                                class="orbit-icon-text">Exp</span></a>
+                        <a href="https://docs.djangoproject.com/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Django" data-category="Backend"
+                            data-level="Advanced" data-desc="Python framework"><span
+                                class="orbit-icon-text">Dj</span></a>
+                        <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Flask" data-category="Backend"
+                            data-level="Intermediate" data-desc="Microframework"><span
+                                class="orbit-icon-text">Flk</span></a>
+                        <a href="https://laravel.com/docs" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Laravel" data-category="Backend"
+                            data-level="Intermediate" data-desc="PHP framework"><i class="fa-brands fa-laravel"></i></a>
+                        <a href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="REST APIs" data-category="Backend"
+                            data-level="Expert" data-desc="Architectural style"><i class="fas fa-plug"></i>
+                        </a>
+                        <a href="https://developer.wordpress.org/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Wordpress"
+                            data-category="Backend" data-level="Intermediate" data-desc="CMS platform"><i
+                                class="fa-brands fa-wordpress"></i></a>
+                        <a href="https://docs.npmjs.com/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="NPM" data-category="Backend" data-level="Advanced"
+                            data-desc="Package manager"><i class="fa-brands fa-npm"></i></a>
+                        <!-- Database -->
+                        <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="MySQL" data-category="Database"
+                            data-level="Advanced" data-desc="Relational DB"><span class="orbit-icon-text">SQL</span></a>
+                        <a href="https://www.postgresql.org/docs/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="PostgreSQL"
+                            data-category="Database" data-level="Advanced" data-desc="Advanced RDBMS"><span
+                                class="orbit-icon-text">PG</span></a>
+                        <a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="MongoDB"
+                            data-category="Database" data-level="Advanced" data-desc="NoSQL database"><span
+                                class="orbit-icon-text">MDB</span></a>
+                        <a href="https://learn.microsoft.com/sql/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="MSSQL" data-category="Database"
+                            data-level="Intermediate" data-desc="Microsoft SQL Server"><i
+                                class="fas fa-database"></i></a>
+                        <a href="https://sqlite.org/docs.html" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="SQLite"
+                            data-category="Database" data-level="Advanced" data-desc="Embedded DB"><span
+                                class="orbit-icon-text">Lite</span></a>
+                        <a href="https://supabase.com/docs" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Supabase" data-category="Database"
+                            data-level="Intermediate" data-desc="Firebase alternative"><span
+                                class="orbit-icon-text">Sup</span></a>
+                        <a href="https://firebase.google.com/docs" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Firebase"
+                            data-category="Database" data-level="Advanced" data-desc="Backend-as-a-service"><span
+                                class="orbit-icon-text">FB</span></a>
+                        <!-- Cloud & DevOps -->
+                        <a href="https://tldp.org/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Linux" data-category="DevOps"
+                            data-level="Advanced" data-desc="OS Administration"><i class="fa-brands fa-linux"></i></a>
+                        <a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Docker" data-category="DevOps"
+                            data-level="Intermediate" data-desc="Containerization"><i
+                                class="fa-brands fa-docker"></i></a>
+                        <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Git" data-category="DevOps" data-level="Expert"
+                            data-desc="Version control"><i class="fa-brands fa-git-alt"></i></a>
+                        <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="GitHub" data-category="DevOps" data-level="Expert"
+                            data-desc="Code repository"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="AWS" data-category="Cloud"
+                            data-level="Intermediate" data-desc="Amazon Web Services"><i
+                                class="fa-brands fa-aws"></i></a>
+                        <a href="https://learn.microsoft.com/azure/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Azure" data-category="Cloud"
+                            data-level="Intermediate" data-desc="Microsoft Cloud"><span
+                                class="orbit-icon-text">Azr</span></a>
+                        <a href="https://cloud.google.com/docs" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Google Cloud"
+                            data-category="Cloud" data-level="Intermediate" data-desc="GCP services"><span
+                                class="orbit-icon-text">GCP</span></a>
+                        <a href="https://vercel.com/docs" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Vercel" data-category="Cloud"
+                            data-level="Advanced" data-desc="Deployment platform"><span
+                                class="orbit-icon-text">Vcl</span></a>
+                        <!-- AI & Data -->
+                        <a href="https://www.make.com/en/help" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Make.com"
+                            data-category="Automation" data-level="Expert" data-desc="Visual automation"><span
+                                class="orbit-icon-text">Mk</span></a>
+                        <a href="https://docs.n8n.io/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="n8n" data-category="Automation"
+                            data-level="Advanced" data-desc="Self-hosted automation"><span
+                                class="orbit-icon-text">n8n</span></a>
+                        <a href="https://pytorch.org/docs/stable/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="PyTorch" data-category="AI"
+                            data-level="Intermediate" data-desc="Deep learning"><span
+                                class="orbit-icon-text">PT</span></a>
+                        <a href="https://www.tensorflow.org/learn" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="TensorFlow" data-category="AI"
+                            data-level="Intermediate" data-desc="Machine learning"><span
+                                class="orbit-icon-text">TF</span></a>
+                        <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Pandas" data-category="Data"
+                            data-level="Advanced" data-desc="Data manipulation"><span
+                                class="orbit-icon-text">Pds</span></a>
+                        <a href="https://numpy.org/doc/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Numpy" data-category="Data" data-level="Advanced"
+                            data-desc="Numerical data"><span class="orbit-icon-text">Npy</span></a>
+                        <a href="https://scikit-learn.org/stable/documentation.html" target="_blank"
+                            rel="noopener noreferrer" class="orbit-icon" style="text-decoration:none;"
+                            data-skill="Scikit-Learn" data-category="AI" data-level="Intermediate"
+                            data-desc="ML library"><span class="orbit-icon-text">SKL</span></a>
+                        <!-- Tools -->
+                        <a href="https://help.figma.com/" target="_blank" rel="noopener noreferrer" class="orbit-icon"
+                            style="text-decoration:none;" data-skill="Figma" data-category="Design"
+                            data-level="Advanced" data-desc="UI/UX design"><i class="fa-brands fa-figma"></i></a>
+                        <a href="https://learning.postman.com/docs/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Postman" data-category="Tools"
+                            data-level="Advanced" data-desc="API testing"><span class="orbit-icon-text">API</span></a>
+                        <a href="https://www.notion.so/help" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Notion" data-category="Tools"
+                            data-level="Advanced" data-desc="Productivity"><span class="orbit-icon-text">Not</span></a>
+                        <a href="https://support.atlassian.com/trello/" target="_blank" rel="noopener noreferrer"
+                            class="orbit-icon" style="text-decoration:none;" data-skill="Trello" data-category="Tools"
+                            data-level="Advanced" data-desc="Project management"><i class="fa-brands fa-trello"></i></a>
+                    </div>
+                </div>
+
+                <!-- Skill Detail Tooltip -->
+                <div class="skill-tooltip" id="skillTooltip">
+                    <div class="tooltip-name"></div>
+                    <div class="tooltip-category"></div>
+                    <div class="tooltip-level"></div>
+                    <div class="tooltip-desc"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section" id="experience">
+        <div class="timeline-particles" id="timelineParticles"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Experience</h2>
+                <p>Career Evolution & Growth</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="futuristic-timeline">
+                <!-- Energy line background -->
+                <div class="timeline-energy-line">
+                    <div class="energy-pulse"></div>
+                </div>
+
+                <!-- Node 1: Future -->
+                <div class="timeline-node reveal">
+                    <div class="timeline-marker">
+                        <div class="marker-core"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-date-badge">Future</div>
+                        <h3 class="timeline-role">AI Systems Architect</h3>
+                        <div class="timeline-details">
+                            <p>Designing next-generation intelligent systems, multi-agent architectures, and
+                                holographic AR interfaces.</p>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Multi-Agent Systems</span>
+                            <span>Automation Platforms</span>
+                            <span>Linux Infrastructure</span>
+                            <span>Neural AR Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 2: 2025-Present -->
+                <div class="timeline-node reveal">
+                    <div class="timeline-marker">
+                        <div class="marker-core"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-date-badge">2025 — Present</div>
+                        <h3 class="timeline-role">Full Stack Developer</h3>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> Clarisync</h4>
+                        <div class="timeline-details">
+                            <p>Building robust web applications and backend APIs while managing software
+                                infrastructure and deployments.</p>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>MSSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 3: 2024 -->
+                <div class="timeline-node reveal">
+                    <div class="timeline-marker">
+                        <div class="marker-core"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-date-badge">2024</div>
+                        <h3 class="timeline-role">Automation Builder</h3>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> Ashtex Solutions</h4>
+                        <div class="timeline-details">
+                            <p>Built Python automation scripts and integrated AI tools to optimize business
+                                workflows and reduce manual processes.</p>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>Make.com</span>
+                            <span>n8n</span>
+                            <span>AI Agents</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Featured Engineering Projects</h2>
+                <p>Building Intelligent Systems, Scalable Applications, and Automation Solutions</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack"><i class="fas fa-layer-group"></i> Full
+                    Stack</button>
+                <button class="filter-btn" data-filter="automation"><i class="fas fa-cogs"></i>
+                    Automation</button>
+                <button class="filter-btn" data-filter="ai"><i class="fas fa-brain"></i> AI / ML</button>
+                <button class="filter-btn" data-filter="research"><i class="fas fa-flask"></i> Research</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Airline Management System -->
+                <div class="glass-card project-card reveal" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-plane"></i></div>
+                        <span class="project-category-badge badge-fullstack">Full Stack</span>
+                        <div class="project-overlay">
+                            <a href="{% url 'airline_doc' %}" class="overlay-btn" aria-label="Case Study">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Ahwaz-Ahmed0912/Airline-Management-System.git" target="_blank"
+                                class="overlay-btn" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Airline Management System</h3>
+                        <p>A comprehensive airline management platform with flight booking, payment processing,
+                            and role-based access control.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-users"></i> 500+ Users</span>
+                            <span><i class="fas fa-bolt"></i> 40% Faster</span>
+                        </div>
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-js"></i> TypeScript</span>
+                            <span>Next.js</span>
+                            <span><i class="fas fa-database"></i> MSSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: AI Automation System -->
+                <div class="glass-card project-card reveal" data-category="ai automation">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-brain"></i></div>
+                        <span class="project-category-badge badge-ai">AI / Automation</span>
+                        <div class="project-overlay">
+                            <a href="{% url 'ai_automation_doc' %}" class="overlay-btn" aria-label="Case Study">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Ahwaz-Ahmed0912/AI-Automation-System.git" target="_blank"
+                                class="overlay-btn" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Automation System</h3>
+                        <p>Intelligent automation system with AI-powered decision support, workflow automation,
+                            and task optimization capabilities.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-robot"></i> 100+ Workflows</span>
+                            <span><i class="fas fa-chart-line"></i> 60% Efficiency</span>
+                        </div>
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-python"></i> Python</span>
+                            <span>Make.com</span>
+                            <span>AI Agents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Athlete Monitoring System -->
+                <div class="glass-card project-card reveal" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-running"></i></div>
+                        <span class="project-category-badge badge-fullstack">Full Stack</span>
+                        <div class="project-overlay">
+                            <a href="{% url 'athlete_doc' %}" class="overlay-btn" aria-label="Case Study">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Ahwaz-Ahmed0912/Athlete-Management-System.git" target="_blank"
+                                class="overlay-btn" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Athlete Monitoring System</h3>
+                        <p>Performance tracking platform for athletes with real-time data analytics, custom
+                            dashboards, and insightful reports.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-chart-bar"></i> Real-time Analytics</span>
+                            <span><i class="fas fa-tachometer-alt"></i> Live Dashboard</span>
+                        </div>
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-react"></i> React</span>
+                            <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Automation Workflows -->
+                <div class="glass-card project-card reveal" data-category="automation">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-network-wired"></i></div>
+                        <span class="project-category-badge badge-automation">Automation</span>
+                        <div class="project-overlay">
+                            <a href="{% url 'workflows_doc' %}" class="overlay-btn" aria-label="Case Study">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Ahwaz-Ahmed0912/Automation-Workflows.git" target="_blank"
+                                class="overlay-btn" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Automation Workflows</h3>
+                        <p>Suite of intelligent automation workflows for social media scheduling, calendar
+                            management, and email automation.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-sync-alt"></i> 50+ Automations</span>
+                            <span><i class="fas fa-plug"></i> 10+ APIs</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Make.com</span>
+                            <span>Google APIs</span>
+                            <span>Webhooks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESEARCH SECTION ===== -->
+    <section class="section" id="research">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Research & Innovation Lab</h2>
+                <p>Exploring AI, Human-Computer Interaction, Augmented Reality, and Intelligent Systems</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="research-content reveal">
+                <!-- Main Research Card -->
+                <div class="glass-card research-card research-card-premium">
+                    <div class="research-card-header">
+                        <span class="research-label"><i class="fas fa-flask"></i> FYP Research</span>
+                        <span class="research-status-badge">Active</span>
+                    </div>
+                    <h3>Neural Holographic AR Assistant</h3>
+                    <p>A research project exploring the integration of neural networks, augmented reality, and
+                        holographic interfaces. This project aims to build next-generation AR experiences
+                        powered by deep learning models for real-time interaction and perception.</p>
+
+                    <div class="research-areas">
+                        <div class="research-area"><i class="fas fa-brain"></i><span>Artificial
+                                Intelligence</span></div>
+                        <div class="research-area"><i class="fas fa-eye"></i><span>Computer Vision</span></div>
+                        <div class="research-area"><i class="fas fa-vr-cardboard"></i><span>AR / VR</span></div>
+                        <div class="research-area"><i class="fas fa-project-diagram"></i><span>Neural
+                                Networks</span></div>
+                        <div class="research-area"><i class="fas fa-users"></i><span>Human Computer
+                                Interaction</span></div>
+                    </div>
+
+                    <!-- Progress Bars -->
+                    <div class="research-progress-section">
+                        <h4><i class="fas fa-tasks"></i> Research Progress</h4>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Literature Review</span><span
+                                    class="progress-percent">100%</span></div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>System Design</span><span
+                                    class="progress-percent">90%</span></div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Implementation</span><span
+                                    class="progress-percent">75%</span></div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Evaluation</span><span class="progress-percent">60%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-progress="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Stats & Timeline Row -->
+                <div class="research-bottom-grid">
+                    <!-- Stats -->
+                    <div class="glass-card research-stats-card reveal">
+                        <h4><i class="fas fa-chart-bar"></i> Research Statistics</h4>
+                        <div class="research-stats-grid">
+                            <div class="research-stat"><span class="stat-number" data-target="30">0</span>+<span
+                                    class="stat-desc">Papers Reviewed</span></div>
+                            <div class="research-stat"><span class="stat-number" data-target="5">0</span><span
+                                    class="stat-desc">Core Papers Analyzed</span></div>
+                            <div class="research-stat"><span class="stat-number" data-target="4">0</span><span
+                                    class="stat-desc">Research Domains</span></div>
+                            <div class="research-stat"><span class="stat-number" data-target="1">0</span><span
+                                    class="stat-desc">Active FYP</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Publications -->
+                    <div class="glass-card research-publications-card reveal">
+                        <h4><i class="fas fa-file-alt"></i> Publications & Work</h4>
+                        <div class="paper-item">
+                            <span class="paper-title">Neural Holographic Rendering for Real-time AR</span>
+                            <span class="paper-status status-progress">In Progress</span>
+                        </div>
+                        <div class="paper-item">
+                            <span class="paper-title">Deep Learning Approaches for Holographic Interfaces</span>
+                            <span class="paper-status status-draft">Draft</span>
+                        </div>
+                        <div class="paper-item">
+                            <span class="paper-title">Comparative Study of AR Frameworks</span>
+                            <span class="paper-status status-review">Literature Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG SECTION ===== -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Insights & Technical Writing</h2>
+                <p>Sharing knowledge about AI, Software Engineering, Automation, and Modern Development</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="blog-categories reveal">
+                <button class="blog-cat-btn active" data-blog-filter="all">All</button>
+                <button class="blog-cat-btn" data-blog-filter="ai">AI Engineering</button>
+                <button class="blog-cat-btn" data-blog-filter="fullstack">Full Stack</button>
+                <button class="blog-cat-btn" data-blog-filter="automation">Automation</button>
+                <button class="blog-cat-btn" data-blog-filter="api">System Design</button>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <div class="glass-card blog-card reveal" data-blog-category="ai automation">
+                    <div class="blog-image">
+                        <i class="fas fa-robot"></i>
+                        <span class="blog-read-time"><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-tags-row">
+                            <span class="blog-tag tag-ai">AI Engineering</span>
+                            <span class="blog-tag tag-automation">Automation</span>
+                        </div>
+                        <h3>Building Intelligent Automation Pipelines with Python</h3>
+                        <p>Learn how to create powerful automation workflows using Python, AI APIs, and Make.com
+                            integrations.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Mar 2025</span>
+                            <a href="{% url 'automation_python' %}" class="blog-read-link">Continue Reading <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="glass-card blog-card reveal" data-blog-category="fullstack">
+                    <div class="blog-image">
+                        <i class="fas fa-layer-group"></i>
+                        <span class="blog-read-time"><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-tags-row">
+                            <span class="blog-tag tag-fullstack">Full Stack</span>
+                        </div>
+                        <h3>Modern Full Stack Development with Django & React</h3>
+                        <p>A comprehensive guide to building production-ready applications with Django backend
+                            and React frontend.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Feb 2025</span>
+                            <a href="{% url 'django_react' %}" class="blog-read-link">Continue Reading <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="glass-card blog-card reveal" data-blog-category="api">
+                    <div class="blog-image">
+                        <i class="fas fa-plug"></i>
+                        <span class="blog-read-time"><i class="far fa-clock"></i> 10 min read</span>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-tags-row">
+                            <span class="blog-tag tag-api">System Design</span>
+                            <span class="blog-tag tag-fullstack">Full Stack</span>
+                        </div>
+                        <h3>Mastering RESTful API Design & Integration</h3>
+                        <p>Best practices for designing clean, scalable APIs and integrating third-party
+                            services in your apps.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 2025</span>
+                            <a href="{% url 'rest_api_design' %}" class="blog-read-link">Continue Reading <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Let's Build Something Amazing Together</h2>
+                <p>Open to internships, research collaborations, software development projects, AI systems, and
+                    automation consulting.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>Let's work <span>together</span></h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part
+                        of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>ahwazahmad87@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <p>0312-4206220</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-item-text">
+                                <h4>Availability</h4>
+                                <p class="availability-status"><span class="availability-dot"></span> Available
+                                    for Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://linkedin.com/in/ahwaz-ahmad-52112a261/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Ahwaz-Ahmed0912" target="_blank" rel="noopener"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahwazahmad87@gmail.com" target="_blank"
+                            aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="glass-card contact-form-wrapper reveal">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name</label>
+                                <input type="text" id="contactName" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Your Email</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="john@example.com"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" placeholder="Project Inquiry"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Type</label>
+                            <div class="quick-options">
+                                <button type="button" class="quick-option"
+                                    data-value="Internship Opportunity">Internship</button>
+                                <button type="button" class="quick-option"
+                                    data-value="Research Collaboration">Research</button>
+                                <button type="button" class="quick-option" data-value="AI Project">AI
+                                    Project</button>
+                                <button type="button" class="quick-option"
+                                    data-value="Automation Project">Automation</button>
+                                <button type="button" class="quick-option" data-value="Full Stack Development">Full
+                                    Stack</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <img src="{% static 'img/logo.png' %}" alt="Ahwaz Logo" class="logo-img">
+                        <span>Ahwaz</span><span class="dot">.</span>
+                    </a>
+                    <p class="footer-role-desc">AI Architect · Full Stack Developer · Automation Engineer ·
+                        Researcher</p>
+                    <p class="footer-tagline">Designing Intelligent Systems. Building Scalable Solutions.
+                        Exploring the Future of AI.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="footer-links">
+                    <h4>More</h4>
+                    <a href="#experience">Experience</a>
+                    <a href="#research">Research</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="https://github.com/Ahwaz-Ahmed0912" target="_blank"><i class="fa-brands fa-github"></i>
+                        GitHub</a>
+                    <a href="https://linkedin.com/in/ahwaz-ahmad-52112a261/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahwazahmad87@gmail.com" target="_blank"
+                        aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ahwaz Ahmad. All rights reserved.</p>
+                <p>Built with <span style="color: #ef4444;">❤</span> & Code</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/animations.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
