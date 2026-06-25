@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: ahwaz-portfolio
+    runtime: python
+    rootDir: portfolio_project
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn portfolio_project.wsgi:application"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.12.3"
+      - key: DJANGO_SUPERUSER_USERNAME
+        value: "admin"
+      - key: DJANGO_SUPERUSER_EMAIL
+        value: "admin@ahwazahmad.com"
+      - key: DJANGO_SUPERUSER_PASSWORD
+        value: "AhwazAdmin2026!"

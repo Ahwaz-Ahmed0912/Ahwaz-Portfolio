@@ -1,120 +1,348 @@
-Keep the entire Skills section exactly as it is right now in terms of:
+Use this as a **MASTER PROMPT for Claude Opus 4 / Antigravity** to automatically deploy your portfolio, Django project, or full-stack website on completely free hosting with a free domain/subdomain.
 
-* Design
-* Layout
-* Styling
-* Colors
-* Animations
-* Responsiveness
-* Categories
-* Skill names
-* Structure
+---
 
-Do **not** modify, redesign, remove, rename, reorder, or restyle anything.
+# MASTER DEPLOYMENT PROMPT
 
-### Required Change
+Act as a Senior DevOps Engineer, Cloud Architect, Full Stack Developer, and Deployment Automation Specialist.
 
-Convert every skill badge/chip/button into a clickable link.
+Your task is to fully deploy my website online using ONLY free-tier services.
 
-When a user clicks a skill, it should open the official documentation for that technology in a new browser tab.
+## Objective
 
-The visual appearance must remain exactly the same as the current UI.
+Analyze my entire project and deploy it to production with a live URL.
 
-### Implementation Requirements
+I do not want theoretical explanations.
 
-* Wrap each skill item with an anchor (`<a>`) or navigation link.
-* Use `target="_blank"` and `rel="noopener noreferrer"`.
-* Preserve all existing hover effects and styling.
-* Do not change spacing, sizing, typography, icons, or component structure.
-* Only add documentation URLs behind the existing skill buttons.
+I want complete deployment execution instructions, configuration files, commands, and troubleshooting.
 
-### Documentation Mapping
+Your goal is to make the website publicly accessible on a free domain/subdomain.
 
-#### Languages & Core
+---
 
-JavaScript -> https://developer.mozilla.org/en-US/docs/Web/JavaScript
-TypeScript -> https://www.typescriptlang.org/docs/
-Python -> https://docs.python.org/3/
-C -> https://en.cppreference.com/w/c
-C++ -> https://en.cppreference.com/w/cpp
-PHP -> https://www.php.net/docs.phpDart -> https://dart.dev/guides
-Kotlin -> https://kotlinlang.org/docs/home.html
-Bash -> https://www.gnu.org/software/bash/manual/
-PowerShell -> https://learn.microsoft.com/powershell/
-Markdown -> https://www.markdownguide.org/
+# Deployment Requirements
 
+## Priority Order
 
-#### Frontend & UI
+Use the best free option available:
 
-HTML5 -> https://developer.mozilla.org/en-US/docs/Web/HTML
-React -> https://react.dev/
-Next.js -> https://nextjs.org/docs
-Angular -> https://angular.dev/
-Bootstrap -> https://getbootstrap.com/docs/
-Vite -> https://vitejs.dev/guide/
-Flutter -> https://docs.flutter.dev/
-React Native -> https://reactnative.dev/docs/getting-started
-Figma -> https://help.figma.com/
-Canva -> https://www.canva.com/help/
+### Frontend
 
+1. Vercel
+2. Cloudflare Pages
+3. Netlify
+4. GitHub Pages
 
-#### Backend
+### Backend
 
-Node.js -> https://nodejs.org/docs/latest/api/
-Express.js -> https://expressjs.com/
-Django -> https://docs.djangoproject.com/
-Flask -> https://flask.palletsprojects.com/
-Laravel -> https://laravel.com/docs
-REST APIs -> https://restfulapi.net/
-WordPress -> https://developer.wordpress.org/
-NPM -> https://docs.npmjs.com/
+1. Render Free Tier
+2. Railway Free Tier (if available)
+3. Koyeb
+4. Fly.io
+5. PythonAnywhere
 
+### Database
 
-#### Databases
+1. Supabase PostgreSQL
+2. Neon PostgreSQL
+3. Railway PostgreSQL
+4. Render PostgreSQL
 
-MySQL -> https://dev.mysql.com/doc/
-PostgreSQL -> https://www.postgresql.org/docs/
-MSSQL -> https://learn.microsoft.com/sql/
-MongoDB -> https://www.mongodb.com/docs/
-SQLite -> https://sqlite.org/docs.html
-Supabase -> https://supabase.com/docs
-Firebase -> https://firebase.google.com/docs
-Oracle -> https://docs.oracle.com/en/database/
+---
 
+# Project Analysis
 
-#### Cloud, DevOps & Tools
+Analyze:
 
-Linux -> https://tldp.org/
-Docker -> https://docs.docker.com/
-Git -> https://git-scm.com/doc
-GitHub -> https://docs.github.com/
-GitLab -> https://docs.gitlab.com/
-AWS -> https://docs.aws.amazon.com/
-GCP -> https://cloud.google.com/docs
-Azure -> https://learn.microsoft.com/azure/
-Vercel -> https://vercel.com/docs
-Nginx -> https://nginx.org/en/docs/
-Apache -> https://httpd.apache.org/docs/
-Postman -> https://learning.postman.com/docs/
-Power BI -> https://learn.microsoft.com/power-bi/
-Notion -> https://www.notion.so/help
-Trello -> https://support.atlassian.com/trello/
+* All project files
+* package.json
+* requirements.txt
+* pyproject.toml
+* Dockerfile
+* next.config.js
+* vercel.json
+* manage.py
+* settings.py
+* environment variables
+* database configuration
+* static files
+* media files
 
+Determine automatically whether the project is:
 
-#### Data, AI & Automation
+* Django
+* Flask
+* FastAPI
+* React
+* Next.js
+* Angular
+* Node.js
+* Express
+* MERN Stack
+* Full Stack Application
 
-PyTorch -> https://pytorch.org/docs/stable/
-TensorFlow -> https://www.tensorflow.org/learn
-Scikit-Learn -> https://scikit-learn.org/stable/documentation.html
-Pandas -> https://pandas.pydata.org/docs/
-NumPy -> https://numpy.org/doc/
-Make.com -> https://www.make.com/en/help
-n8n -> https://docs.n8n.io/
-AI Agents -> https://platform.openai.com/docs
-Anaconda -> https://docs.anaconda.com/
-Selenium -> https://www.selenium.dev/documentation/
+---
 
+# Deployment Tasks
 
-### Final Output Requirement
+Perform the following:
 
-Update only the Skills section so that every skill badge becomes a clickable documentation link while keeping the UI visually identical to the current implementation. No other code, styling, components, layouts, or sections should be modified.
+### Step 1
+
+Audit the project structure.
+
+Explain:
+
+* Framework detected
+* Frontend stack
+* Backend stack
+* Database used
+* Missing files
+* Build requirements
+
+---
+
+### Step 2
+
+Generate all required deployment files.
+
+Examples:
+
+#### Render
+
+render.yaml
+
+#### Vercel
+
+vercel.json
+
+#### Railway
+
+railway.json
+
+#### Docker
+
+Dockerfile
+
+#### Python
+
+requirements.txt
+
+runtime.txt
+
+gunicorn configuration
+
+---
+
+### Step 3
+
+Configure Environment Variables
+
+Create:
+
+.env.example
+
+Include:
+
+* SECRET_KEY
+* DEBUG
+* ALLOWED_HOSTS
+* DATABASE_URL
+* EMAIL_HOST
+* EMAIL_PORT
+* EMAIL_USER
+* EMAIL_PASSWORD
+* API_KEYS
+
+---
+
+### Step 4
+
+Configure Django Production Settings
+
+Implement:
+
+* DEBUG=False
+* WhiteNoise
+* Static Files
+* Media Files
+* CORS
+* Security Headers
+* Allowed Hosts
+* CSRF Trusted Origins
+
+Generate production-ready code.
+
+---
+
+### Step 5
+
+Database Setup
+
+If SQLite:
+
+Migrate to PostgreSQL.
+
+Generate:
+
+* migration commands
+* connection strings
+* environment variables
+
+Use free PostgreSQL provider.
+
+---
+
+### Step 6
+
+GitHub Setup
+
+Generate commands:
+
+```bash
+git init
+git add .
+git commit -m "Initial deployment"
+git branch -M main
+git remote add origin <repo>
+git push -u origin main
+```
+
+Explain exactly where to execute each command.
+
+---
+
+### Step 7
+
+Deploy Backend
+
+For Render:
+
+Provide:
+
+* Build Command
+* Start Command
+* Environment Variables
+* Region
+* Python Version
+
+Example:
+
+```bash
+pip install -r requirements.txt
+python manage.py collectstatic --noinput
+python manage.py migrate
+```
+
+Start:
+
+```bash
+gunicorn projectname.wsgi:application
+```
+
+---
+
+### Step 8
+
+Deploy Frontend
+
+If React/Next.js:
+
+Deploy to:
+
+* Vercel
+
+Generate:
+
+* Build settings
+* Environment Variables
+* API URL configuration
+
+---
+
+### Step 9
+
+Free Domain Setup
+
+Find the best free option:
+
+### Option A
+
+Subdomain
+
+Examples:
+
+* project.vercel.app
+* project.onrender.com
+* project.pages.dev
+
+### Option B
+
+Completely Free Custom Domain
+
+Guide me through:
+
+* FreeDNS
+* DuckDNS
+* eu.org (if available)
+* Cloudflare DNS
+
+Provide exact steps.
+
+---
+
+### Step 10
+
+Final Verification Checklist
+
+Create a checklist for:
+
+* Site loads
+* SSL enabled
+* HTTPS working
+* Database connected
+* Static files working
+* API working
+* Contact form working
+* Emails sending
+* Mobile responsive
+
+---
+
+# Troubleshooting Mode
+
+If deployment fails:
+
+Automatically diagnose:
+
+* Build errors
+* Package conflicts
+* Missing dependencies
+* CORS errors
+* Static file errors
+* Database connection errors
+* Environment variable issues
+
+Provide fixes.
+
+---
+
+# Output Format
+
+Always provide:
+
+1. Project Analysis
+2. Missing Requirements
+3. Generated Deployment Files
+4. Git Commands
+5. Hosting Platform Instructions
+6. Domain Setup Instructions
+7. Deployment Commands
+8. Troubleshooting Guide
+9. Final Production URL
+
+Do not stop until the website is fully deployable.
+
+Assume the user is a Computer Science student with basic GitHub knowledge and wants the cheapest possible solution.
+
+Goal: Get the website online with HTTPS and a publicly accessible URL using free services only.
